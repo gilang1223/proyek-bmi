@@ -1,0 +1,45 @@
+<!doctype html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>kalkulator BMI</h1>
+    </header>
+    <section class="kalkulator">
+        <form onsubmit="return kalkulasi()">
+            <p>jenis kelamin</p><br>
+            <input type="radio" value="" name="jenis_kelamin" id="laki-laki">
+            <label for="laki-laki">laki laki</label>
+            <input type="radio" value="perempuan" name="jenis_kelamin" id="perempuan">
+            <label for="perempuan">perempuan</label>
+            <div>
+                <label for="tinggi-badan">tinggi badan</label><br>
+                <input type="number" value="" id="tinggi-badan"class="input-box">
+            </div>
+            <div>
+                <label for="berat-badan">berat badan</label><br>
+                <input type="number" value="" id="berat-badan"class="input-box">
+            </div>
+            <div>
+                <label for="usia">usia</label><br>
+                <input type="number" value="" id="usia" class="input-box">
+            </div>
+            <input type="submit" value="submit" id="submit" class="tombol-submit">
+            <input type="reset" value="reset" id="reset" class="tombol-reset">
+        </form>
+    </section>
+    <section class="hasil">
+        <h1>BMI mu adalah</h1>
+        <h3 id="hasil-bmi">hasil</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero voluptate id nesciunt. Aperiam doloribus, cumque accusamus quidem iure dignissimos consequatur laboriosam facilis quis provident dolorum quae libero illum nobis commodi.</p>
+    </section>
+    <section class="info-umum">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptates voluptate architecto et eos hic incidunt unde fuga eligendi inventore corrupti in debitis repellendus, voluptatibus facere cupiditate dolor perferendis porro?</p>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>

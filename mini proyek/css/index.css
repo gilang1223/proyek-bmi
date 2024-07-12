@@ -1,0 +1,50 @@
+body{
+    padding:0;
+    margin:0;
+    background-color:#17153B;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.kalkulator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kalkulator form{
+    border-radius:15px;
+    border:solid #2E236C;
+    background-image:url('../aset/background-bmi.jpg');
+    padding:10px;
+    background-color:rgba(128, 128, 128, 0.3);
+    backdrop-filter:blur('10px');
+    border-radius:10px;
+}
+.kalkulator form .input-box{
+    margin-bottom:3vh;
+    border-radius:10px;
+    height:5vh;
+    padding:5px;
+    font-size:large;
+}
+.tombol-submit{
+    color:white;
+    padding:5px;
+    width:6vw;
+    background-color: #2E236C;
+    border:solid #271e5b;
+}
+.tombol-reset{
+    color:white;
+    width:5vw;
+    padding:5px;
+    background-color: #2e236c00;
+    border:solid #2E236C;
+}
+.hasil{
+    background-color: #2E236C;
+}
+/* info umum */
+.info-umum{
+    padding:5px;
+    background-color: #433D8B;
+}
