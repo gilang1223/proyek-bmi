@@ -24,9 +24,11 @@ function kalkulasi(tinggi,beratBadan) {
     const resiko = document.getElementById('resiko-penyakit');
     const solusi = document.getElementById('solusi');
     const kontenInfoUmum = document.getElementById('konten-infoUmum');
-    var BMI = tinggi/(beratBadan*beratBadan)
+
+    const BMI = beratBadan / (tinggi * tinggi);
     hasil.innerHTML = BMI.toFixed(2);
-    if (BMI <18.5){
+
+    if (BMI < 18.5){
         penjelasan.innerHTML = "kekurangan berat badan"
         resiko.innerHTML = "Malnutrisi, Osteoporosis, Anemia, Sistem kekebalan tubuh yang lemah"
         solusi.innerHTML = " penting untuk berkonsultasi dengan dokter atau ahli gizi untuk memahami penyebab kekurangan berat badan dan mendapatkan saran diet yang tepat. Meningkatkan asupan kalori dengan makanan bergizi tinggi seperti kacang-kacangan, alpukat, daging tanpa lemak, dan produk susu penuh lemak dapat membantu. Makan lebih sering dan menyertakan makanan ringan sehat di antara waktu makan utama juga dianjurkan. Suplemen mungkin diperlukan jika disarankan oleh profesional kesehatan. Selain itu, olahraga, terutama latihan kekuatan, dapat membantu membangun otot dan meningkatkan massa tubuh."
