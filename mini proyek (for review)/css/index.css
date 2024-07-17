@@ -15,6 +15,10 @@ nav{
     height:10vh;
     align-items: center;
 }
+/* peringatan */
+#info-awal{
+    padding-left:9vw ;
+}
 /* alert */
 #alert{
     background-color: rgba(128, 128, 128, 0.5);
@@ -48,7 +52,6 @@ nav{
     transform: scale(1);
 }
 #alert.alert-aktif{
-    z-index: 11111;
     transform:scale(1);
 }
 /* end alert */
@@ -89,15 +92,17 @@ nav{
     color:white;
     padding:5px;
     width:6vw;
-    background-color: #271e5b;
+    background-color: #C80036;
     border:solid #271e5b;
+    border-radius:5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .tombol-reset{
     color:white;
     width:5vw;
     padding:5px;
     background-color: #2e236c00;
-    border:2px solid #271e5b;
+    border:1px solid #C80036;
 }
 .hasil{
     background-color: #2E236C;
@@ -138,8 +143,8 @@ nav{
     /* justify-content: center;
     align-items: center; */
     gap:10px;
-    height: 0px;
-    transform:scaleY(0);
+    transition: 0.5s;
+    transform:scale(0);
 }
 #konten-infoUmum .peringatan{
     width:20vw;
@@ -151,6 +156,22 @@ nav{
     width:30vw;
 }
 #konten-infoUmum.aktif{
-    transform: scaleY(1);
+    transform: scale(1);
     height:100%;
+}
+#konten-infoUmum .tombol a{
+    color:white;
+    background-color:#C80036;
+    border-radius:5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#konten-infoUmum .tombol a{
+    text-decoration: none;
+    color:white;
+    font-weight: 400;
+}
+#konten-infoUmum .tombol a:hover{
+background-color: #2E236C;
 }

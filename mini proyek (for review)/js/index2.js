@@ -1,9 +1,11 @@
 function main(event) {
+    // kamus
     event.preventDefault();
     const usia = document.getElementById("usia").value;
     const tinggi = document.getElementById("tinggi-badan").value/100;
     const beratBadan= document.getElementById("berat-badan").value;
     const usiaValidasi = validasi(usia)
+    // algoritma
     if (usiaValidasi){
         kalkulasi(tinggi,beratBadan);
     }else{
@@ -51,8 +53,11 @@ function reset(){
     window.location.reload();
 }
 function popUp(){
-        // const layar = document.getElementsByTagName("body")[0];
+        window.scrollTo(0, 0);
+        const kontenInfoUmum = document.getElementById('konten-infoUmum');
+        const layar = document.getElementsByTagName("body")[0]
         const alert = document.getElementById('alert');
         alert.classList.toggle('alert-aktif');
-        // layar.style.overflow = "hidden";
+        layar.style.overflow = "hidden";
+        kontenInfoUmum.style.display = "none";
 }
